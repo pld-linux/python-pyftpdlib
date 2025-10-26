@@ -99,10 +99,10 @@ PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 \
 %if %{with tests}
 PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 \
 %{__python3} -m pytest pyftpdlib/test \
+%if %{without tests_net}
 	--ignore pyftpdlib/test/test_functional.py \
 	--ignore pyftpdlib/test/test_functional_ssl.py \
 	--ignore pyftpdlib/test/test_servers.py
-%if %{without tests_net}
 %endif
 %endif
 %endif
