@@ -3,7 +3,7 @@
 %bcond_without	tests		# unit tests (can fail under heavy system load)
 %bcond_with	tests_net	# functional tests, localhost networking required
 %bcond_without	python2		# CPython 2.x module
-%bcond_without	python3		# CPython 3.x module
+%bcond_with	python3		# CPython 3.x module (built from python3-pyftpdlib.spec)
 
 Summary:	Very fast asynchronous FTP server library for Python 2
 Summary(pl.UTF-8):	Bardzo szybka biblioteka asynchronicznego serwera FTP dla Pythona 2
